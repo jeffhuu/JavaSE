@@ -7,12 +7,12 @@ package com.jeff.reflection;
  */
 public class test01 {
     public static void main(String[] args) throws ClassNotFoundException {
-        Class<?> c1 = Class.forName("com.jeff.reflection.User");
-        System.out.println(c1);
-        Class c2 = new User().getClass();
-        System.out.println(c2);
-        System.out.println(c1.hashCode());
-        System.out.println(c2.hashCode());
+//        Class<?> c1 = Class.forName("com.jeff.reflection.User");
+//        System.out.println(c1);
+//        Class c2 = new User().getClass();
+//        System.out.println(c2);
+//        System.out.println(c1.hashCode());
+//        System.out.println(c2.hashCode());
 
     }
 }
@@ -58,5 +58,12 @@ class User {
         this.age = age;
     }
 
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", age=" + age +
+                '}';
+    }
 }
