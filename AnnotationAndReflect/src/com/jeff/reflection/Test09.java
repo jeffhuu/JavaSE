@@ -36,7 +36,7 @@ public class Test09 {
         User user4 = (User) c1.newInstance();
         System.out.println("改变属性前：" + user4);
         Field name = c1.getDeclaredField("name");
-        System.out.println("===============setAccessible 为 True 以访问私有属性");
+        System.out.println("===============setAccessible 为 True，关闭程序安全检测 以访问私有属性");
         name.setAccessible(true);
         name.set(user4, "lavan2");
         System.out.println("改变属性后：" + user4);
