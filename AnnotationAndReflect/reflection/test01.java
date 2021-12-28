@@ -65,4 +65,12 @@ class User {
                 ", age=" + age +
                 '}';
     }
+
+    public void said() {
+        System.out.println("执行said方法");
+    }
+
+    public void playGames(String gameName) {
+        System.out.println("User正在玩--" + gameName);
+    }
 }
