@@ -35,5 +35,6 @@ public class DebugInvocationHandler implements InvocationHandler {
         Method playGames = userClass.getMethod("playGames", String.class);
         Object[] objects = new Object[] {"《英雄联盟》"};
         debugInvocationHandler.invoke(user, playGames, objects);
+
     }
 }
