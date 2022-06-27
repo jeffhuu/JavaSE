@@ -1,4 +1,4 @@
-package com.jeff.annotation;
+package annotation;
 
 import java.util.ArrayList;
 import java.util.List;
