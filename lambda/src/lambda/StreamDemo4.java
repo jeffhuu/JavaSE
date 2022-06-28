@@ -80,11 +80,11 @@ public class StreamDemo4 {
 
         //{h,e,l,l,o},{W,o,r,l,d}
         Stream<String[]> stream = Arrays.stream(words).map(w -> w.split(""));//Stream<String[]>
-
+        stream.map(Arrays::asList).forEach(System.out::println);
         //H,e,l,l,o,W,o,r,l,d
-        Stream<String> stringStream = stream.flatMap(Arrays::stream);
-
-        stringStream.distinct().forEach(System.out::println);
+//        Stream<String> stringStream = stream.flatMap(Arrays::stream);
+//
+//        stringStream.distinct().forEach(System.out::println);
     }
 
 }
