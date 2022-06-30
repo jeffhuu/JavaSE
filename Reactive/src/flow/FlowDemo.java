@@ -56,7 +56,7 @@ public class FlowDemo {
         }
         //关闭发布者
         publisher.close();
-        new Scanner(System.in).next();
+//        new Scanner(System.in).next();
     }
 
 }
